@@ -1,0 +1,18 @@
+<%- include('./templates/header.ejs') %>
+<%- include('./templates/nav-todos.ejs') %>
+
+
+<form action="/admin/servicios/actualizar/<%=servicios._id%>" method="POST"> 
+
+    <input type="text" id="nombre" name="nombre" placeholder="Nombre del servicio" value="<%=servicios.nombre%>"> 
+
+    <textarea name="descripcion" id="descripcion" cols="20" rows="20" placeholder="Descripción del servicio"><%=servicios.descripcion%></textarea>
+
+    <input type="submit" value="Actualizar servicio">
+
+</form>
+
+
+
+
+<%- include('./templates/footer.ejs') %>

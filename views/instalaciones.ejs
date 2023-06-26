@@ -1,0 +1,31 @@
+<%- include('./templates/header.ejs') %>
+<%- include('./templates/nav-todos.ejs') %>
+
+    
+<main class="mainbody columnas">
+
+
+    <h2> <%= titulo %></h2>
+
+        <p> <%= parrafo %></p>
+        
+
+        <% if(instalaciones.length>0) {%>
+            <% instalaciones.forEach(element => {%>
+                
+        <h2> <%= element.nombre %></h2>
+
+        <p> <%= element.descripcion %></p>
+
+          <%  }); %>
+
+         <% } else { %>
+
+            <p>No hay servicios</p>
+
+            <% } %>
+
+</main>
+
+
+<%- include('./templates/footer.ejs') %>

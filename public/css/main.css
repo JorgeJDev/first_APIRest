@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --dark: black;
+    --medium: gray;
+    --light: white;
+    --cuasi: #616161;
+    --rojo: red;
+    --azul: #369;
+    --cosa: #ccc;
+}
+
+body {
+
+    padding: 4px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-weight: normal;
+}
+
+nav {
+    background: var(--light);
+    font-size: 10px;
+    border: 1px solid var(--cosa);
+    border-right: none;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: block;
+    border-bottom: 1px solid var(--cosa);
+    list-style: none;
+
+}
+
+nav ul li:first-child {
+    border-left: none;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: var(--cuasi);
+    padding: 10px 0;
+}
+
+nav {
+    display: table;
+    table-layout: fixed;
+}
+
+ul {
+    display: block;
+    flex-direction: row;
+}
+
+ul li {
+    flex-grow: 1;
+}
+
+.p {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 80px;
+}
+
+.form {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+.form-fila {
+    display: flex;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.form-col {
+    width: 50%;
+    margin-bottom: 8px;
+}
+
+textarea {
+    width: 100%;
+    border-radius: 1px;
+    border-width: 1px;
+    border-color: var(--azul);
+    padding: 5px;
+    color: var(--cuasi);
+}
+
+button {
+    border-radius: 0.25rem;
+    border-width: 1px;
+    border-color: var(--cuasi);
+    background-color: var(--light);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+@media screen and (min-width:768px) {
+    nav {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (min-width:992px) {
+
+    nav {
+        font-size: 20px;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+        border-left: 1px solid var(--light);
+        border-right: 1px solid var(--cosa);
+    }
+}
+
+@media screen and (min-width:1200px) {
+
+    nav {
+        font-size: 22px;
+    }
+
+}

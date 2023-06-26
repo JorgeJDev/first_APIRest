@@ -1,0 +1,15 @@
+<%- include('./templates/header.ejs') %>
+<%- include('./templates/nav-todos.ejs') %>
+
+
+<form id="form" action="/admin/servicios/crearservicio" method="POST"> 
+
+    <input id="nombre" type="text" name="nombre" placeholder="Nombre del servicio"> 
+
+    <textarea id="descripcion" type="text" name="descripcion" cols="20" rows="20" placeholder="Añada una descripción del servicio"></textarea>
+
+    <input type="submit" value="Añadir servicio">
+
+</form>
+
+<%- include('./templates/footer.ejs') %>
